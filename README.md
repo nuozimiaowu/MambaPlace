@@ -136,4 +136,4 @@ python -m evaluation.pipeline --base_path ./data/k360_30-10_scG_pd10_pc4_spY_all
     --path_coarse ./checkpoints/{PATH_TO_COARSE}/{COARSE_MODEL_NAME} \
     --path_fine ./checkpoints/{PATH_TO_FINE}/{FINE_MODEL_NAME} 
 ```
-### We borrowed some code from Textpos and Text2Loc, and we would like to thank them for their help!
+### Acknowledgemengt: We borrowed some code from Textpos and Text2Loc, and we would like to thank them for their help!
