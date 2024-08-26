@@ -1,16 +1,16 @@
 # MambaPlace
 This repository is the official implementation of MambaPlace  🔥🔥🔥
 
-### Introduction
+###  Introduction
 In future smart cities, autonomous vehicles, drones, and intelligent logistics systems will rely heavily on accurate localization from human language descriptions for effective path planning. Traditional visual place recognition (VPR) methods, which depend on cameras or radar to extract features from 2D images or point clouds, struggle with efficiency in human-computer interaction and lack precision under varying environmental conditions. A promising alternative is the text-to-point-cloud localization approach, which enables accurate localization without requiring proximity to the location and is resilient to changes in the natural environment. However, this method faces challenges such as ambiguous language descriptions and similar descriptions for different positions within the same region. Existing solutions, like Text2Pos and Text2loc, have made progress but still fall short in fully integrating multimodal data. To address these issues, we propose the Mamba model, a unified approach using Selective State Space Models (SSM) to enhance feature representation and improve localization accuracy.
 
-### Structure overview
+###  Structure overview
 ![image](https://github.com/user-attachments/assets/b7949c7d-3481-4149-89b5-69ee873c9fac)
 
-### Experimental performance
+###  Experimental performance
 ![image](https://github.com/user-attachments/assets/e44eff5f-b26e-4b65-abf1-438e23c9f23e)
 
-## Installation
+##  Installation
 Create a conda environment and install basic dependencies:
 ```bash
 git clone https://github.com/nuozimiaowu/MambaPlace
