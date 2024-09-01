@@ -411,21 +411,21 @@ class CrossMatch(torch.nn.Module):
         # #############################cross####################################
 
         desc0 = self.cross_objects[0](desc0, desc1)
-
+        
+        desc0 = self.mamba_layer(desc0)
+        
         desc1 = self.cross_hints[0](desc1, desc0)
-
-        desc1_res = desc1
-        desc1, b = self.layers(desc1)
-        desc1 = desc1 + desc1_res
+    
+        desc1 = self.mamba_layer(desc1)
 
         desc0 = self.cross_objects[1](desc0, desc1)
-
+        
+        desc0 = self.mamba_layer(desc0)
+        
         desc1 = self.cross_hints[1](desc1, desc0)
 
         desc1 = desc1.max(dim=0)[0]
         offsets = self.mlp_offsets(desc1)
-
-        return offsets
         # #############################cross####################################
 
     @property
